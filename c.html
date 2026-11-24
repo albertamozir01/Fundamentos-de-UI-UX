@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Sistema - SENAI</title>
+    <!-- Conecta o HTML com o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="card">
+            <h1>Login</h1>
+            <p class="subtitulo">Insira suas credenciais para acessar</p>
+
+            <form action="#" method="POST">
+                <div class="campo">
+                    <label for="email">E-mail Institucional</label>
+                    <input type="email" id="email" name="email" placeholder="aluno@estudante.sesisenai.org.br" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit" class="btn-principal">Entrar</button>
+            </form>
+
+            <footer class="rodape-card">
+                <p>Primeiro acesso? <a href="cadastro.html">Crie sua conta</a></p>
+            </footer>
+        </section>
+    </main>
+
+</body>
+</html>
+        
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - SENAI</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="card">
+            <h1>Novo Cadastro</h1>
+            <p class="subtitulo">Preencha seus dados para criar uma conta</p>
+
+            <form action="#" method="POST">
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" min="14" max="120" placeholder="Ex: 18" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Gênero</label>
+                    <select id="genero" name="genero" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="nao-binario">Não-binário</option>
+                        <option value="prefiro-nao-informar">Prefiro não informar</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha (mínimo 8 caracteres)</label>
+                    <input type="password" id="senha" name="senha" minlength="8" placeholder="Crie uma senha" required>
+                </div>
+
+                <button type="submit" class="btn-principal">Cadastrar</button>
+            </form>
+
+            <footer class="rodape-card">
+                <p>Já possui cadastro? <a href="login.html">Fazer login</a></p>
+            </footer>
+        </section>
+    </main>
+
+</body>
+</html>
+
+
+    
